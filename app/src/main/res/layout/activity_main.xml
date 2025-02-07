@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 1st image view of the road -->
+    <ImageView
+        android:id="@+id/backgroundRoad1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/mainroad"/>
+
+    <!-- 2nd image view of the road -->
+    <ImageView
+        android:id="@+id/backgroundRoad2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/mainroad" />
+
+    <!-- image view of the logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/motobikerlogo"/>
+
+    <!-- start button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="40sp"
+        android:backgroundTint="#fa920c"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- hidden novice level button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/noviceLevelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novıce"
+        android:textSize="30sp"
+        android:backgroundTint="#fa920c"
+        android:layout_marginTop="330dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- hidden intermediate level button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/intermediateLevelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ıntermedıate"
+        android:textSize="30sp"
+        android:backgroundTint="#fa920c"
+        android:layout_below="@+id/noviceLevelButton"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- hidden advanced level button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/advancedLevelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="advanced"
+        android:textSize="30sp"
+        android:backgroundTint="#fa920c"
+        android:layout_below="@+id/intermediateLevelButton"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- image view of the obstacle on left side -->
+    <ImageView
+        android:id="@+id/obstacle1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/obstacle1"
+        android:layout_marginTop="500dp"
+        android:layout_marginStart="30dp"/>
+
+    <!-- image view of the obstacle on right side -->
+    <ImageView
+        android:id="@+id/obstacle2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/obstacle1"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="250dp"/>
+
+    <!-- image view of motor rider -->
+    <ImageView
+        android:id="@+id/motorRider"
+        android:layout_width="60dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/motorshb"/>
+
+</RelativeLayout>
